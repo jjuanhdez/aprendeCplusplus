@@ -78,12 +78,18 @@
 43. [Ejercicios con funciones]
 44. [Más ejercicios]
 
-## Introducción a la programación orientada a objetos
+## Programación orientada a objetos
 
 45. [Definición de clase, objeto, atributos y métodos]
 46. [Constructores]
 47. [Destructores]
-48. [Plantillas]
-49. [Encapsulamiento en la programación orientada a objetos]
-50. [Herencia y delegación]
+48. [Encapsulamiento]
+49. [Herencia y delegación]
+50. [consejos para usar la POO de forma efectiva]
 51. [Ejercicios de programación orientada a objetos]
+
+## Programación funcional
+
+52. [Características]
+53. [Clases de funciones]
+54. [Ejercicios de programación funcional]
