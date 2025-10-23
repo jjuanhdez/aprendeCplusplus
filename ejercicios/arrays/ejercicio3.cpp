@@ -1,14 +1,14 @@
 //################################################################################
 //Realizar un programa que lea por teclado las 5 notas obtenidas por un alumno 
 //(comprendidas entre 0 y 10). Mostrar todas las notas, la nota media, la nota 
-//m·s alta y la menor que haya obtenido.
+//m√°s alta y la menor que haya obtenido.
 //################################################################################
-//An·lisis
+//An√°lisis
 //Leo 5 notas (valido que sean >= 0 y <= 10). Guardo las notas en un vector.
-//Recorro de nuevo el vector para acumular las notas, calcular la nota m·xima 
-//y la nota mÌnima. Finalmente calculo la media y muestro los valores.
+//Recorro de nuevo el vector para acumular las notas, calcular la nota m√°xima 
+//y la nota m√≠nima. Finalmente calculo la media y muestro los valores.
 //Datos de entrada: 5 notas.
-//InformaciÛn de salida: Las notas, la nota media, nota m·xima y nota mÌnima.
+//Informaci√≥n de salida: Las notas, la nota media, nota m√°xima y nota m√≠nima.
 //Variables: notas(vector de 10 enteros), tam_notas,indice (Entero)
 //           nota_media (Real), suma, nota_max, nota_min (Entero)
 //################################################################################
@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
 	
 	for(indice = 0; indice < TAM; indice++)
 	{
-		//Valido que sea un n˙mero >=0 y <=10.
+		//Valido que sea un n√∫mero >=0 y <=10.
 		do
 		{
 			cout << "Introduce la nota " << indice+1 << ": ";
@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 		}
 		while(notas[indice] < 0 || notas[indice] > 10);
 	}
-	//Supongo que la nota m·xima y la mÌnima es ta primera
+	//Supongo que la nota m√°xima y la m√≠nima es la primera
 	nota_max = notas[0];
 	nota_min = notas[0];
 	
@@ -42,15 +42,15 @@ int main(int argc, char *argv[]) {
 	{
 		//Acumulo la nota para calcular la media.
 		suma += notas[indice];
-		//Actualizo la nota m·xima si encuentro una m·s grande
+		//Actualizo la nota m√°xima si encuentro una m√°s grande
 		if(notas[indice] > nota_max)
 			nota_max = notas[indice];
 			
-		//Actualizo la nota mÌnima si encuentro una m·s pequeÒa
+		//Actualizo la nota m√≠nima si encuentro una m√°s peque√±a
 		if(notas[indice] < nota_min)
 			nota_min = notas[indice];
 	}
-	//Calculo la media, teniendo en cuenta el tamaÒo del vector.
+	//Calculo la media, teniendo en cuenta el tama√±o del vector.
 	nota_media = float(suma) / TAM;
 	//Muestro resultados
 	cout << endl;
@@ -60,7 +60,7 @@ int main(int argc, char *argv[]) {
 	
 	cout << endl;
 	cout << "Nota media: " << nota_media << endl;
-	cout << "Nota m·xima: " << nota_max << endl;
-	cout << "Nota mÌnima: " << nota_min << endl;
+	cout << "Nota m√°xima: " << nota_max << endl;
+	cout << "Nota m√≠nima: " << nota_min << endl;
 	return 0;
 }
